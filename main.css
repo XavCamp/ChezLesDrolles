@@ -1,0 +1,67 @@
+body {
+    text-align: center;
+    font-family: Arial;
+    text-transform: uppercase;
+    font-size:large;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.Logo {
+    transition: transform 1s;
+    max-height: 30vh;
+}
+.Logo:hover {
+    transform: scale(1.1);
+}
+
+.Title {
+    font-family: monospace;
+    font-size: 2.5em;
+    margin-top: 0;
+}
+
+.Subtitle {
+    font-family: serif;
+}
+
+.Phone {
+    position: relative;
+    display: inline-block;
+    padding: 1em 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.Phone:before {
+    opacity: 0;
+    content: '';
+    display: block;
+    height: 20px;
+    width: 20px;
+    background-image: url(phone.png);
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    transition: opacity 0.5s;
+}
+.Phone:hover:before {
+    opacity: 1;
+}
+
+.Address {
+    font-family: serif;
+}
+
+.Map {
+    width: 80%;
+    height: 40vh;
+}
+
+.SocialIcon {
+    height: 40px;
+    margin: 5px;
+}
