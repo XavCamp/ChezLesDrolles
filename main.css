@@ -31,7 +31,7 @@ a {
 .Phone {
     position: relative;
     display: inline-block;
-    padding: 1em 25px;
+    padding: 1em 30px;
     font-size: 1.2em;
     font-weight: bold;
     font-family: sans-serif;
@@ -40,8 +40,8 @@ a {
     opacity: 0;
     content: '';
     display: block;
-    height: 20px;
-    width: 20px;
+    height: 1em;
+    width: 1em;
     background-image: url(phone.png);
     background-size: contain;
     position: absolute;
@@ -50,7 +50,20 @@ a {
 }
 .Phone:hover:before {
     opacity: 1;
+    animation: Rotate 2s linear 1s 1;
 }
+
+@keyframes Rotate {
+    0% {transform:rotate(0deg);}
+    4% {transform:rotate(-25deg);}
+    8% {transform:rotate(20deg);}
+    12% {transform:rotate(-25deg);}
+    16% {transform:rotate(20deg);}
+    20% {transform:rotate(-25deg);}
+    24% {transform:rotate(20deg);}
+    26% {transform:rotate(0deg);}
+    100% {transform:rotate(0deg);}
+  }
 
 .Address {
     font-family: serif;
