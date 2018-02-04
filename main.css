@@ -13,10 +13,19 @@ a {
 .Logo {
     transition: transform 1s;
     max-height: 30vh;
+    animation: drawLogo 2s;
 }
 .Logo:hover {
     transform: scale(1.1);
 }
+@keyframes drawLogo {
+    0% {
+        clip-path: circle(0 at 0 100%);
+    }
+    100% {
+        clip-path: circle(200% at 0 100%);
+    }
+  }
 
 .Title {
     font-family: monospace;
