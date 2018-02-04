@@ -10,6 +10,10 @@ a {
     color: inherit;
 }
 
+iframe {
+    border: none;
+}
+
 .Logo {
     transition: transform 1s;
     max-height: 30vh;
