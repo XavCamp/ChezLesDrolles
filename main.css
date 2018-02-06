@@ -15,21 +15,62 @@ iframe {
 }
 
 .Logo {
-    transition: transform 1s;
     max-height: 30vh;
-    animation: drawLogo 2s;
 }
-.Logo:hover {
-    transform: scale(1.1);
+.Logo .circle, .Logo .text {
+    animation: drawCircle 1s;
+    transform-origin: 50% 50%;
 }
-@keyframes drawLogo {
+@keyframes drawCircle {
     0% {
-        clip-path: circle(0 at 0 100%);
+        transform: scale(4);
     }
     100% {
-        clip-path: circle(200% at 0 100%);
+        transform: scale(1);
     }
-  }
+}
+.Logo .drolles {
+    animation: drawName 2s;
+}
+@keyframes drawName {
+    0% {
+        clip-path: inset(0 100% 0 0);
+    }
+    50% {
+        clip-path: inset(0 100% 0 0);
+    }
+    100% {
+        clip-path: inset(0 0 0 0);
+    }
+}
+.Logo .accent {
+    animation: drawAccent 2.5s;
+}
+@keyframes drawAccent {
+    0% {
+        clip-path: inset(100% 0 0 0);
+    }
+    90% {
+        clip-path: inset(100% 0 0 0);
+    }
+    100% {
+        clip-path: inset(0 0 0 0);
+    }
+}
+.Logo .underline {
+    animation: drawUnderline 3s;
+}
+@keyframes drawUnderline {
+    0% {
+        clip-path: inset(100% 0 0 0);
+    }
+    90% {
+        clip-path: inset(100% 0 0 0);
+    }
+    100% {
+        clip-path: inset(0 0 0 0);
+    }
+}
 
 .Title {
     font-family: monospace;
