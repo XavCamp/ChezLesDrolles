@@ -3,16 +3,93 @@
     <head>
         <link href="main.css" rel="stylesheet" type="text/css">
         <title>Chez les Dròlles - Pizzas à emporter</title>
+        <!-- Facebook stuff -->
         <meta property="og:url" content="http://chezlesdrolles.com/" />
         <meta property="og:image" content="http://chezlesdrolles.com/logo.png" />
         <meta property="og:image:alt" content="Chez les Dròlles" />
         <meta property="og:title" content="Chez les Dròlles - Pizzas à emporter" />
         <meta property="og:description" content="Chez les Dròlles - Pizzas à emporter - Produits frais, Pâte faite maison - 5 COURS D'ORNANO 33700 MÉRIGNAC - 05 56 58 70 86" />
+        <!-- Twitter stuff -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Chez les Dròlles - Pizzas à emporter">
         <meta name="twitter:description" content="Chez les Dròlles - Pizzas à emporter - Produits frais, Pâte faite maison - 5 COURS D'ORNANO 33700 MÉRIGNAC - 05 56 58 70 86">
         <meta name="twitter:image" content="http://chezlesdrolles.com/logo.png">
         <meta name="thumbnail" content="http://chezlesdrolles.com/logo.png" />
+        <!-- Google stuff -->
+        <script type="application/ld+json">
+            {
+              "@context": "http://schema.org",
+              "@type": "Restaurant",
+              "url": "http://www.chezlesdrolles.com",
+              "logo": "http://www.chezlesdrolles.com/logo.png",
+              "sameAs": [
+                "http://www.facebook.com/lesdrolles",
+                "http://instagram.com/lesdrolles"
+              ],
+              "image": [
+                "https://www.chezlesdrolles.com/pizzas/Chorizo.jpg",
+                "https://www.chezlesdrolles.com/pizzas/Landaise.jpg",
+                "https://www.chezlesdrolles.com/pizzas/Royale.jpg"
+               ],
+              "@id": "http://www.chezlesdrolles.com",
+              "name": "Chez les Dròlles - Pizzas à emporter",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "5 Cour d'Ornano",
+                "addressLocality": "Mérignac",
+                "postalCode": "33700",
+                "addressCountry": "FR"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 44.8326806,
+                "longitude": -0.612898
+              },
+              "telephone": "+33556587086",
+              "contactPoint": [
+                { "@type": "ContactPoint",
+                  "telephone": "+33556587086",
+                  "contactType": "reservations",
+                  "areaServed": "FR",
+                  "availableLanguage": "French"
+                }
+              ],
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                  ],
+                  "opens": "11:00",
+                  "closes": "14:00"
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                  ],
+                  "opens": "16:00",
+                  "closes": "22:30"
+                }
+              ],
+              "menu": "http://www.chezlesdrolles.com/#menu",
+              "acceptsReservations": "False",
+              "servesCuisine": "Italian",
+              "priceRange": "€€"
+            }
+        </script>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -65,7 +142,7 @@
           <a class="banner-item" href="#contact">Contact</a>
         </nav>
 
-        <!-- <ul class="blackboard pizzas">
+        <ul class="blackboard pizzas">
             <li><img src="pizzas/Chorizo.jpg"><div>La Chorizo</div></li>
             <li><img src="pizzas/Fajitas-BCF.jpg"><div>La Fajitas</div></li>
             <li><img src="pizzas/Jambon-Oeuf.jpg"><div>La Jambon Œuf</div></li>
@@ -75,7 +152,7 @@
             <li><img src="pizzas/Parmesan.jpg"><div>La Parmesan</div></li>
             <li><img src="pizzas/Royale.jpg"><div>La Royale</div></li>
             <li><img src="pizzas/Vegitalienne.jpg"><div>La Vegitalienne</div></li>
-        </ul> -->
+        </ul>
 
         <h1 id="menu" class="menu-title">
             <svg class="line line--reverse-h"><use href="#line"></use></svg>
