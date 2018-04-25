@@ -1,8 +1,15 @@
+html {
+    background-color: burlywood;
+}
+
 body {
-    text-align: center;
-    font-family: Arial;
+    font-family: Garamond;
     text-transform: uppercase;
-    font-size:large;
+    letter-spacing: 4px;
+    margin: 0;
+}
+ul {
+    list-style: none;
 }
 
 a {
@@ -14,10 +21,32 @@ iframe {
     border: none;
 }
 
-.Logo {
-    max-height: 30vh;
+.links {
+    text-align: right;
+    height: 50px;
+    padding: 5px;
+    margin-top: 20px;
 }
-.Logo .circle, .Logo .text {
+.link-icon {
+    height: 100%;
+    margin-left: 10px;
+}
+.link-logo {
+    color: black;
+    fill: transparent;
+    width: 50px;
+}
+.phone-icon {
+    border-radius: 50%;
+    border: 3px solid black;
+    padding: 7px;
+    box-sizing: border-box;
+}
+.phone-icon:hover {
+    animation: Rotate 2s linear 500ms 1;
+}
+
+.big-logo .circle, .big-logo .text {
     animation: drawCircle 1s;
     transform-origin: 50% 50%;
 }
@@ -29,7 +58,7 @@ iframe {
         transform: scale(1);
     }
 }
-.Logo .drolles {
+.big-logo .drolles {
     animation: drawName 2s;
 }
 @keyframes drawName {
@@ -43,7 +72,7 @@ iframe {
         clip-path: inset(0 0 0 0);
     }
 }
-.Logo .accent {
+.big-logo .accent {
     animation: drawAccent 2.5s;
 }
 @keyframes drawAccent {
@@ -57,7 +86,7 @@ iframe {
         clip-path: inset(0 0 0 0);
     }
 }
-.Logo .underline {
+.big-logo .underline {
     animation: drawUnderline 3s;
 }
 @keyframes drawUnderline {
@@ -72,40 +101,7 @@ iframe {
     }
 }
 
-.Title {
-    font-family: monospace;
-    font-size: 2.5em;
-    margin-top: 0;
-}
 
-.Subtitle {
-    font-family: serif;
-}
-
-.Phone {
-    position: relative;
-    display: inline-block;
-    padding: 1em 30px;
-    font-size: 1.2em;
-    font-weight: bold;
-    font-family: sans-serif;
-}
-.Phone:before {
-    opacity: 0;
-    content: '';
-    display: block;
-    height: 1em;
-    width: 1em;
-    background-image: url(phone.png);
-    background-size: contain;
-    position: absolute;
-    left: 0;
-    transition: opacity 0.5s;
-}
-.Phone:hover:before {
-    opacity: 1;
-    animation: Rotate 2s linear 1s 1;
-}
 
 @keyframes Rotate {
     0% {transform:rotate(0deg);}
@@ -119,16 +115,166 @@ iframe {
     100% {transform:rotate(0deg);}
   }
 
-.Address {
+.address {
     font-family: serif;
 }
 
-.Map {
-    width: 80%;
+.map {
+    width: 90%;
     height: 40vh;
+    margin: 50px 5%;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.8);
 }
 
-.SocialIcon {
-    height: 40px;
-    margin: 5px;
+.blackboard {
+    position: relative;
+    background-image: radial-gradient( circle at left 30%, rgba(34, 34, 34, 0.3), rgba(34, 34, 34, 0.3) 80px, rgba(34, 34, 34, 0.5) 100px, rgba(51, 51, 51, 0.5) 160px, rgba(51, 51, 51, 0.5)), linear-gradient( 215deg, transparent, transparent 100px, #222 260px, #222 320px, transparent), radial-gradient( circle at right, #111, #515151), linear-gradient( 175deg, transparent, transparent 40px, rgba(120, 120, 120, 0.1) 100px, rgba(120, 120, 120, 0.1) 110px, transparent 220px, transparent), linear-gradient( 200deg, transparent 80%, rgba(50, 50, 50, 0.3)), radial-gradient( ellipse at right bottom, transparent, transparent 200px, rgba(80, 80, 80, 0.1) 260px, rgba(80, 80, 80, 0.1) 320px, transparent 400px, transparent);
+    background-color: #333;
+    color: white;
+}
+
+.banner {
+    display: flex;
+    padding: 10px 0;
+    text-align: center;
+}
+.banner--top {
+    height: 160px;
+}
+.banner--scroll-links {
+    font-size: xx-large;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.banner-item {
+    flex: 1 1 auto;
+}
+.banner-side {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+}
+.banner-side--right {
+    direction: rtl;
+}
+.line {
+    height: 10px;
+    display: block;
+    width: calc(100% + 10px);
+    margin: 5px auto;
+}
+.blackboard .line {
+    fill: white;
+}
+.line--bigger {
+    width: calc(100% + 30px);
+}
+.line--reverse-v {
+    transform: scale(1, -1);
+}
+.line--reverse-h {
+    transform: scale(-1, 1);
+}
+.line--reverse-v.line--reverse-h {
+    transform: scale(-1, -1);
+}
+
+header {
+    text-transform: uppercase;
+    font-size: xx-large;
+}
+
+nav {
+    margin-top: 20px;
+    font-size: x-large;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+.big-logo {
+    flex: 0 0 auto;
+    fill: transparent;
+    width: 170px;
+}
+
+svg .black {
+    fill: currentColor;
+}
+
+.pizzas {
+    white-space: nowrap;
+    overflow-x: auto;
+    padding: 20px 0;
+    text-align: center;
+}
+.pizzas li {
+    display: inline-block;
+}
+.pizzas img {
+    margin: 0 20px;
+    width: 180px;
+}
+
+.menu-title {
+    text-align: center;
+    font-size: xx-large;
+    font-family: Verdana;
+}
+.menu-title .line {
+    fill: black;
+    width: 85%;
+}
+
+.menu-list {
+    padding: 0 15%;
+    position: relative;
+}
+.big-logo--background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:  100%;
+    opacity: 0.2;
+    color: peru;
+}
+.menu-list td {
+    width: 50%;
+    padding: 20px 10px;
+    vertical-align: top;
+}
+.pizza-header {
+    display: flex;
+    font-size: larger;
+}
+.pizza-name {
+    flex: 1 1 auto;
+    font-size: x-large;
+}
+.pizza-price {
+    font-family: Arial;
+    letter-spacing: normal;
+}
+.pizza-details {
+    font-family: Verdana;
+    text-transform: initial;
+    letter-spacing: initial;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: xx-large;
+}
+footer .big-logo {
+    height: 200px;
+}
+footer div {
+    margin: 20px 0;
+}
+footer .phone {
+    font-size: larger;
 }
