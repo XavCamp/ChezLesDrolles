@@ -33,7 +33,7 @@ iframe {
 }
 .link-logo {
     color: black;
-    fill: transparent;
+    fill: burlywood;
     width: 50px;
 }
 .phone-icon {
@@ -46,7 +46,7 @@ iframe {
     animation: Rotate 2s linear 500ms 1;
 }
 
-.big-logo .circle, .big-logo .text {
+/* .big-logo .circle, .big-logo .text {
     animation: drawCircle 1s;
     transform-origin: 50% 50%;
 }
@@ -99,7 +99,7 @@ iframe {
     100% {
         clip-path: inset(0 0 0 0);
     }
-}
+} */
 
 
 
@@ -194,13 +194,13 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.big-logo {
+header .big-logo {
     flex: 0 0 auto;
-    fill: transparent;
+    fill: #333;
     width: 170px;
 }
 
-svg .black {
+svg .text-color {
     fill: currentColor;
 }
 
@@ -222,6 +222,7 @@ svg .black {
     text-align: center;
     font-size: xx-large;
     font-family: Verdana;
+    padding-top: 55px;
 }
 .menu-title .line {
     fill: black;
@@ -239,6 +240,7 @@ svg .black {
     width: 100%;
     height:  100%;
     opacity: 0.2;
+    fill: burlywood;
     color: peru;
 }
 .menu-list td {
@@ -264,6 +266,33 @@ svg .black {
     letter-spacing: initial;
 }
 
+.menu-title .line,
+.menu-bottom .line {
+    padding-right: 8%;
+    box-sizing: border-box;
+    width: 80%;
+}
+
+/* #entreprise {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 70px;
+}
+#entreprise div {
+    flex: 0 1 auto;
+    max-width: 45%;
+    max-height: 50vh;
+    min-width: 0;
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#entreprise img {
+    max-width: 100%;
+    max-height: 50vh;
+} */
+
 footer {
     text-align: center;
     padding: 20px;
@@ -271,6 +300,7 @@ footer {
 }
 footer .big-logo {
     height: 200px;
+    fill: #333;
 }
 footer div {
     margin: 20px 0;
