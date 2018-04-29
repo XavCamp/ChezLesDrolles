@@ -243,7 +243,7 @@ svg .text-color {
     width: 100%;
     height:  100%;
     opacity: 0.2;
-    fill: rgba(212, 163, 99);
+    fill: rgb(212, 163, 99);
     color: rgb(138, 91, 44);
 }
 .menu-list td {
