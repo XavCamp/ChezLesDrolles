@@ -1,5 +1,6 @@
 html {
-    background-color: burlywood;
+    background-image: radial-gradient( circle at left 30%, rgba(192, 161, 120, 0.2), rgba(192, 161, 120, 0.2) 80px, rgba(192, 161, 120, 0.3) 100px, rgba(221, 177, 119, 0.3) 160px, rgba(221, 177, 119, 0.3)), linear-gradient( 215deg, transparent, transparent 100px, rgba(187, 143, 103, 0.3) 260px, rgba(187, 143, 103, 0.3) 320px, transparent), radial-gradient( circle at right, rgba(194, 156, 122, 0.3), rgba(221, 177, 119, 0.3)), linear-gradient( 175deg, transparent, transparent 40px, rgba(194, 156, 122, 0.1) 100px, rgba(194, 156, 122, 0.1) 110px, transparent 220px, transparent), linear-gradient( 200deg, transparent 80%, rgba(209, 149, 97, 0.2)), radial-gradient( ellipse at right bottom, transparent, transparent 200px, rgba(209, 149, 97, 0.1) 260px, rgba(209, 149, 97, 0.1) 320px, transparent 400px, transparent), url(wood.png);
+    background-color: #CB9B5E;
 }
 
 body {
@@ -7,6 +8,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 4px;
     margin: 0;
+    position: relative;
 }
 ul {
     list-style: none;
@@ -33,7 +35,7 @@ iframe {
 }
 .link-logo {
     color: black;
-    fill: burlywood;
+    fill: rgba(212, 163, 99, 0.5);
     width: 50px;
 }
 .phone-icon {
@@ -128,7 +130,7 @@ iframe {
 
 .blackboard {
     position: relative;
-    background-image: radial-gradient( circle at left 30%, rgba(34, 34, 34, 0.3), rgba(34, 34, 34, 0.3) 80px, rgba(34, 34, 34, 0.5) 100px, rgba(51, 51, 51, 0.5) 160px, rgba(51, 51, 51, 0.5)), linear-gradient( 215deg, transparent, transparent 100px, #222 260px, #222 320px, transparent), radial-gradient( circle at right, #111, #515151), linear-gradient( 175deg, transparent, transparent 40px, rgba(120, 120, 120, 0.1) 100px, rgba(120, 120, 120, 0.1) 110px, transparent 220px, transparent), linear-gradient( 200deg, transparent 80%, rgba(50, 50, 50, 0.3)), radial-gradient( ellipse at right bottom, transparent, transparent 200px, rgba(80, 80, 80, 0.1) 260px, rgba(80, 80, 80, 0.1) 320px, transparent 400px, transparent);
+    background-image: radial-gradient( circle at left 30%, rgba(34, 34, 34, 0.2), rgba(34, 34, 34, 0.2) 80px, rgba(34, 34, 34, 0.3) 100px, rgba(51, 51, 51, 0.3) 160px, rgba(51, 51, 51, 0.3)), linear-gradient( 215deg, transparent, transparent 100px, rgba(22, 22, 22, 0.3) 260px, rgba(22, 22, 22, 0.3) 320px, transparent), radial-gradient( circle at right, rgba(11, 11, 11, 0.3), rgba(51, 51, 51, 0.3)), linear-gradient( 175deg, transparent, transparent 40px, rgba(120, 120, 120, 0.1) 100px, rgba(120, 120, 120, 0.1) 110px, transparent 220px, transparent), linear-gradient( 200deg, transparent 80%, rgba(50, 50, 50, 0.2)), radial-gradient( ellipse at right bottom, transparent, transparent 200px, rgba(80, 80, 80, 0.1) 260px, rgba(80, 80, 80, 0.1) 320px, transparent 400px, transparent), url(pattern.png);
     background-color: #333;
     color: white;
 }
@@ -152,6 +154,7 @@ iframe {
 }
 .banner-side {
     display: flex;
+    flex: 1 1 50%;
     flex-direction: column;
     height: 100%;
     justify-content: space-around;
@@ -240,8 +243,8 @@ svg .text-color {
     width: 100%;
     height:  100%;
     opacity: 0.2;
-    fill: burlywood;
-    color: peru;
+    fill: rgba(212, 163, 99);
+    color: rgb(138, 91, 44);
 }
 .menu-list td {
     width: 50%;
