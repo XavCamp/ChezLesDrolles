@@ -276,7 +276,7 @@ svg .text-color {
     width: 80%;
 }
 
-/* #entreprise {
+#entreprise {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -294,7 +294,7 @@ svg .text-color {
 #entreprise img {
     max-width: 100%;
     max-height: 50vh;
-} */
+}
 
 footer {
     text-align: center;
