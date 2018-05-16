@@ -215,10 +215,30 @@ svg .text-color {
 }
 .pizzas li {
     display: inline-block;
+    padding: 0 20px;
+}
+.pizzas li:focus {
+    font-size: xx-large;
+    position: fixed;
+    width: 70%;
+    max-width: 500px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    margin: 5vh auto;
+    padding: 30px 30px 10px;
+    box-sizing: border-box;
+    background-image: radial-gradient( circle at left 30%, rgba(34, 34, 34, 0.2), rgba(34, 34, 34, 0.2) 80px, rgba(34, 34, 34, 0.3) 100px, rgba(51, 51, 51, 0.3) 160px, rgba(51, 51, 51, 0.3)), linear-gradient( 215deg, transparent, transparent 100px, rgba(22, 22, 22, 0.3) 260px, rgba(22, 22, 22, 0.3) 320px, transparent), radial-gradient( circle at right, rgba(11, 11, 11, 0.3), rgba(51, 51, 51, 0.3)), linear-gradient( 175deg, transparent, transparent 40px, rgba(120, 120, 120, 0.1) 100px, rgba(120, 120, 120, 0.1) 110px, transparent 220px, transparent), linear-gradient( 200deg, transparent 80%, rgba(50, 50, 50, 0.2)), radial-gradient( ellipse at right bottom, transparent, transparent 200px, rgba(80, 80, 80, 0.1) 260px, rgba(80, 80, 80, 0.1) 320px, transparent 400px, transparent), url(pattern.png);
+    background-color: #333;
 }
 .pizzas img {
-    margin: 0 20px;
     width: 180px;
+}
+.pizzas li:focus img {
+    width: 100%;
+    height: 100%;
+    max-width: 80vh;
 }
 
 .menu-title {
@@ -244,6 +264,7 @@ svg .text-color {
     height:  100%;
     opacity: 0.2;
     fill: rgb(212, 163, 99);
+    pointer-events: none;
     color: rgb(138, 91, 44);
 }
 .menu-list td {
