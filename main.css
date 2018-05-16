@@ -25,14 +25,14 @@ iframe {
 }
 
 .links {
-    text-align: right;
     padding: 5px;
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
 }
 .links * {
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     display: inline-block;
 }
 .link-icon {
@@ -290,11 +290,13 @@ svg .text-color {
 .pizza-table {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 .pizza-listing {
     flex: 1 1 45%;
     padding: 10px;
     min-width: 300px;
+    max-width: 500px;
 }
 @media(max-width: 425px) {
     .pizza-listing {
