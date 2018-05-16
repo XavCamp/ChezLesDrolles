@@ -9,6 +9,7 @@ body {
     letter-spacing: 4px;
     margin: 0;
     position: relative;
+    overflow-x: hidden;
 }
 ul {
     list-style: none;
@@ -25,13 +26,18 @@ iframe {
 
 .links {
     text-align: right;
-    height: 50px;
     padding: 5px;
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.links * {
+    flex: 1 1 auto;
+    display: inline-block;
 }
 .link-icon {
-    height: 100%;
     margin-left: 10px;
+    height: 50px;
 }
 .link-logo {
     color: black;
@@ -135,31 +141,54 @@ iframe {
     color: white;
 }
 
-.banner {
-    display: flex;
-    padding: 10px 0;
-    text-align: center;
-}
 .banner--top {
     height: 160px;
 }
-.banner--scroll-links {
+.banner {
+    display: flex;
+    padding: 5px 0;
+    text-align: center;
     font-size: xx-large;
+    overflow: hidden;
+}
+@media(max-width: 768px) {
+    .banner {
+        font-size: large;
+    }
+}
+@media(max-width: 425px) {
+    .banner--top {
+        height: auto;
+        flex-direction: column;
+    }
+}
+.banner--scroll-links {
     position: sticky;
     top: 0;
     z-index: 1;
 }
+@media(max-width: 425px) {
+    .banner--scroll-links {
+        flex-wrap: wrap;
+    }
+}
 .banner-item {
     flex: 1 1 auto;
+    padding: 5px;
 }
-.banner-side {
+.banner-top-item {
     display: flex;
     flex: 1 1 50%;
     flex-direction: column;
     height: 100%;
     justify-content: space-around;
 }
-.banner-side--right {
+@media(max-width: 425px) {
+    .banner-top-item {
+        overflow: hidden;
+    }
+}
+.banner-top-item--right {
     direction: rtl;
 }
 .line {
@@ -186,7 +215,6 @@ iframe {
 
 header {
     text-transform: uppercase;
-    font-size: xx-large;
 }
 
 nav {
@@ -201,6 +229,13 @@ header .big-logo {
     flex: 0 0 auto;
     fill: #333;
     width: 170px;
+    align-self: center;
+    z-index: 1;
+}
+@media(max-width: 425px) {
+    header .big-logo {
+        margin: -30px 0;
+    }
 }
 
 svg .text-color {
@@ -252,9 +287,30 @@ svg .text-color {
     width: 85%;
 }
 
+.pizza-table {
+    display: flex;
+    flex-wrap: wrap;
+}
+.pizza-listing {
+    flex: 1 1 45%;
+    padding: 10px;
+    min-width: 300px;
+}
+@media(max-width: 425px) {
+    .pizza-listing {
+        padding: 5px;
+    }
+}
+
 .menu-list {
-    padding: 0 15%;
+    padding: 0 12%;
     position: relative;
+}
+@media(max-width: 425px) {
+    .menu-list {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 .big-logo--background {
     position: absolute;
