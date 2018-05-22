@@ -39,6 +39,12 @@ iframe {
     margin-left: 10px;
     height: 50px;
 }
+@media(max-width: 425px) {
+    .link-icon {
+        height: 30px;
+        /* width: 30px; */
+    }
+}
 .link-logo {
     color: black;
     fill: rgba(212, 163, 99, 0.5);
@@ -52,6 +58,11 @@ iframe {
 }
 .phone-icon:hover {
     animation: Rotate 2s linear 500ms 1;
+}
+@media(max-width: 425px) {
+    .phone-icon {
+        padding: 3px;
+    }
 }
 
 /* .big-logo .circle, .big-logo .text {
@@ -191,6 +202,11 @@ iframe {
 .banner-top-item--right {
     direction: rtl;
 }
+@media(max-width: 425px) {
+    .banner-top-label {
+        margin-left: 150px;
+    }
+}
 .line {
     height: 10px;
     display: block;
@@ -211,6 +227,13 @@ iframe {
 }
 .line--reverse-v.line--reverse-h {
     transform: scale(-1, -1);
+}
+@media(max-width: 425px) {
+    .line {
+    /* width: 100% !important; */
+    /* overflow: hidden; */
+    /* transform: none !important; */
+    }
 }
 
 header {
@@ -234,7 +257,10 @@ header .big-logo {
 }
 @media(max-width: 425px) {
     header .big-logo {
-        margin: -30px 0;
+        position: absolute;
+        left: 0;
+        height: 100%;
+        margin-top: -5px;
     }
 }
 
@@ -280,13 +306,18 @@ svg .text-color {
     max-width: 80vh;
 }
 
-.menu-title {
+.section-title {
     text-align: center;
     font-size: xx-large;
     font-family: Verdana;
     padding-top: 55px;
 }
-.menu-title .line {
+@media(max-width: 768px) {
+    .section-title {
+        font-size: large;
+    }
+}
+.section-title .line {
     fill: black;
     width: 85%;
 }
@@ -338,9 +369,19 @@ svg .text-color {
     display: flex;
     font-size: larger;
 }
+@media(max-width: 425px) {
+    .pizza-header {
+        font-size: medium;
+    }
+}
 .pizza-name {
     flex: 1 1 auto;
     font-size: x-large;
+}
+@media(max-width: 425px) {
+    .pizza-name {
+        font-size: large;
+    }
 }
 .pizza-price {
     font-family: Arial;
@@ -351,12 +392,22 @@ svg .text-color {
     text-transform: initial;
     letter-spacing: initial;
 }
+@media(max-width: 425px) {
+    .pizza-details {
+        font-size: small;
+    }
+}
 
-.menu-title .line,
-.menu-bottom .line {
+.section-title .line,
+.section-bottom .line {
     padding-right: 8%;
     box-sizing: border-box;
     width: 80%;
+}
+
+.timetable {
+    margin: auto;
+    border-spacing: 25px 10px;
 }
 
 #entreprise {
@@ -381,16 +432,31 @@ svg .text-color {
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
     font-size: xx-large;
+}
+@media(max-width: 425px) {
+    footer {
+        font-size: large;
+    }
 }
 footer .big-logo {
     height: 200px;
     fill: #333;
+}
+@media(max-width: 425px) {
+    footer .big-logo {
+        height: 120px;
+    }
 }
 footer div {
     margin: 20px 0;
 }
 footer .phone {
     font-size: larger;
+}
+@media(max-width: 425px) {
+    footer .phone {
+        font-size: medium;
+    }
 }
