@@ -175,6 +175,7 @@ iframe {
 }
 .banner--scroll-links {
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
     z-index: 1;
 }
