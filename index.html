@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <link href="main.css" rel="stylesheet" type="text/css">
         <title>Chez les Dròlles - Pizzas à emporter</title>
         <meta name="description" content="Chez les Dròlles - Pizzas à emporter à Bordeau/Saint Augustin - Produits frais, Pâte faite maison - 5 COURS D'ORNANO 33700 MÉRIGNAC - 05 56 58 70 86" />
@@ -102,6 +103,8 @@
           gtag('js', new Date());
           gtag('config', 'UA-110587469-1');
         </script>
+        <script src="smoothscroll.min.js"></script>
+        <script src="main.js"></script>
     </head>
     <body>
         <div class="links">
@@ -139,9 +142,9 @@
             </div>
         </header>
         <nav class="blackboard banner banner--scroll-links">
-          <a class="banner-item" href="#menu">La Carte</a>
-          <a class="banner-item" href="#entreprise">L'entreprise</a>
-          <a class="banner-item" href="#contact">Contact</a>
+          <a class="banner-item" href="#menu" onclick="Drolles.scrollToTarget(event, 'menu')">La Carte</a>
+          <a class="banner-item" href="#entreprise" onclick="Drolles.scrollToTarget(event, 'entreprise')">L'entreprise</a>
+          <a class="banner-item" href="#contact" onclick="Drolles.scrollToTarget(event, 'contact')">Contact</a>
         </nav>
 
         <ul class="blackboard pizzas">
