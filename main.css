@@ -65,19 +65,24 @@ iframe {
     }
 }
 
-/* .big-logo .circle, .big-logo .text {
+.big-logo--animated > use {
+    transform: scale(0.23);
+    transform-origin: -36% -20%;
+}
+
+/* .animated-circle, .animated-text {
     animation: drawCircle 1s;
     transform-origin: 50% 50%;
 }
 @keyframes drawCircle {
     0% {
-        transform: scale(4);
+        transform: scale(2);
     }
     100% {
         transform: scale(1);
     }
-}
-.big-logo .drolles {
+} */
+.animated-drolles {
     animation: drawName 2s;
 }
 @keyframes drawName {
@@ -91,7 +96,7 @@ iframe {
         clip-path: inset(0 0 0 0);
     }
 }
-.big-logo .accent {
+.animated-accent {
     animation: drawAccent 2.5s;
 }
 @keyframes drawAccent {
@@ -105,7 +110,7 @@ iframe {
         clip-path: inset(0 0 0 0);
     }
 }
-.big-logo .underline {
+.animated-underline {
     animation: drawUnderline 3s;
 }
 @keyframes drawUnderline {
@@ -118,7 +123,7 @@ iframe {
     100% {
         clip-path: inset(0 0 0 0);
     }
-} */
+}
 
 
 
@@ -255,13 +260,18 @@ header .big-logo {
     width: 170px;
     align-self: center;
     z-index: 1;
+    position: relative;
+    overflow: visible;
 }
 @media(max-width: 425px) {
     header .big-logo {
         position: absolute;
         left: 0;
-        height: 100%;
-        margin-top: -5px;
+        /* height: 100%; */
+        margin-top: 16px;
+        /* align-self: auto; */
+        /* flex: 1 1 auto; */
+        /* display: inline-flex; */
     }
 }
 
