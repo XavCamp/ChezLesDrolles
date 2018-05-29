@@ -39,12 +39,6 @@ iframe {
     margin-left: 10px;
     height: 50px;
 }
-@media(max-width: 425px) {
-    .link-icon {
-        height: 30px;
-        /* width: 30px; */
-    }
-}
 .link-logo {
     color: black;
     fill: rgba(212, 163, 99, 0.5);
@@ -58,11 +52,6 @@ iframe {
 }
 .phone-icon:hover {
     animation: Rotate 2s linear 500ms 1;
-}
-@media(max-width: 425px) {
-    .phone-icon {
-        padding: 3px;
-    }
 }
 
 .big-logo--animated > use {
@@ -167,27 +156,11 @@ iframe {
     font-size: xx-large;
     overflow: hidden;
 }
-@media(max-width: 768px) {
-    .banner {
-        font-size: large;
-    }
-}
-@media(max-width: 425px) {
-    .banner--top {
-        height: auto;
-        flex-direction: column;
-    }
-}
 .banner--scroll-links {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
     z-index: 1;
-}
-@media(max-width: 425px) {
-    .banner--scroll-links {
-        flex-wrap: wrap;
-    }
 }
 .banner-item {
     flex: 1 1 auto;
@@ -200,18 +173,8 @@ iframe {
     height: 100%;
     justify-content: space-around;
 }
-@media(max-width: 425px) {
-    .banner-top-item {
-        overflow: hidden;
-    }
-}
 .banner-top-item--right {
     direction: rtl;
-}
-@media(max-width: 425px) {
-    .banner-top-label {
-        margin-left: 150px;
-    }
 }
 .line {
     height: 10px;
@@ -234,13 +197,6 @@ iframe {
 .line--reverse-v.line--reverse-h {
     transform: scale(-1, -1);
 }
-@media(max-width: 425px) {
-    .line {
-    /* width: 100% !important; */
-    /* overflow: hidden; */
-    /* transform: none !important; */
-    }
-}
 
 header {
     text-transform: uppercase;
@@ -262,17 +218,6 @@ header .big-logo {
     z-index: 1;
     position: relative;
     overflow: visible;
-}
-@media(max-width: 425px) {
-    header .big-logo {
-        position: absolute;
-        left: 0;
-        /* height: 100%; */
-        margin-top: 16px;
-        /* align-self: auto; */
-        /* flex: 1 1 auto; */
-        /* display: inline-flex; */
-    }
 }
 
 svg .text-color {
@@ -301,13 +246,7 @@ svg .text-color {
     margin: 5vh auto;
     padding: 30px 30px 10px;
     box-sizing: border-box;
-    background-image: radial-gradient( circle at left 30%, rgba(34, 34, 34, 0.2), rgba(34, 34, 34, 0.2) 80px, rgba(34, 34, 34, 0.3) 100px, rgba(51, 51, 51, 0.3) 160px, rgba(51, 51, 51, 0.3)), linear-gradient( 215deg, transparent, transparent 100px, rgba(22, 22, 22, 0.3) 260px, rgba(22, 22, 22, 0.3) 320px, transparent), radial-gradient( circle at right, rgba(11, 11, 11, 0.3), rgba(51, 51, 51, 0.3)), linear-gradient( 175deg, transparent, transparent 40px, rgba(120, 120, 120, 0.1) 100px, rgba(120, 120, 120, 0.1) 110px, transparent 220px, transparent), linear-gradient( 200deg, transparent 80%, rgba(50, 50, 50, 0.2)), radial-gradient( ellipse at right bottom, transparent, transparent 200px, rgba(80, 80, 80, 0.1) 260px, rgba(80, 80, 80, 0.1) 320px, transparent 400px, transparent), url(pattern.png);
-    background-color: #333;
-}
-@media(min-width: 426px) {
-    #dialog {
-        font-size: xx-large;
-    }
+    font-size: x-large;
 }
 #dialog:before {
     content: '×';
@@ -331,11 +270,6 @@ svg .text-color {
     font-family: Verdana;
     padding-top: 55px;
 }
-@media(max-width: 768px) {
-    .section-title {
-        font-size: large;
-    }
-}
 .section-title .line {
     fill: black;
     width: 85%;
@@ -352,21 +286,10 @@ svg .text-color {
     min-width: 300px;
     max-width: 500px;
 }
-@media(max-width: 425px) {
-    .pizza-listing {
-        padding: 5px;
-    }
-}
 
 .menu-list {
     padding: 0 12%;
     position: relative;
-}
-@media(max-width: 425px) {
-    .menu-list {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
 }
 .big-logo--background {
     position: absolute;
@@ -388,11 +311,6 @@ svg .text-color {
     display: flex;
     font-size: larger;
 }
-@media(max-width: 425px) {
-    .pizza-header {
-        font-size: medium;
-    }
-}
 .pizza-name {
     flex: 1 1 auto;
     font-size: x-large;
@@ -410,11 +328,7 @@ svg .text-color {
     font-family: Verdana;
     text-transform: initial;
     letter-spacing: initial;
-}
-@media(max-width: 425px) {
-    .pizza-details {
-        font-size: small;
-    }
+    font-size: small;
 }
 
 .section-title .line,
@@ -427,6 +341,7 @@ svg .text-color {
 .timetable {
     margin: auto;
     border-spacing: 25px 10px;
+    font-size: x-large;
 }
 
 #entreprise {
@@ -454,28 +369,13 @@ footer {
     padding: 20px 0;
     font-size: xx-large;
 }
-@media(max-width: 425px) {
-    footer {
-        font-size: large;
-    }
-}
 footer .big-logo {
     height: 200px;
     fill: #333;
-}
-@media(max-width: 425px) {
-    footer .big-logo {
-        height: 120px;
-    }
 }
 footer div {
     margin: 20px 0;
 }
 footer .phone {
     font-size: larger;
-}
-@media(max-width: 425px) {
-    footer .phone {
-        font-size: medium;
-    }
 }
