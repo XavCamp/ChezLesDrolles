@@ -31,6 +31,7 @@
     };
     
     window.onclick = closeDialog;
+    // window.ontouchend = closeDialog;
     
     function closeDialog() {
         var dialog = window.document.getElementById('dialog');
